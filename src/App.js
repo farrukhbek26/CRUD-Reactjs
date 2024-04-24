@@ -17,7 +17,7 @@ class App extends React.Component {
   render() {
    const onFilter = (e) => {
 
-    let res = student.filter((value) => value.name.includes(e.target.value));
+    let res = student.filter((value) => value.name.toLowerCase().includes(e.target.value.toLowerCase()));
     this.setState({
       data: res,
     })
