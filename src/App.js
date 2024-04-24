@@ -34,7 +34,7 @@ class App extends React.Component {
    }
     const onAdd =() =>{
       let user = {
-        id: Date.now(),
+        id: this.state.data.length+1,
         name: this.state.name,
         status: this.state.status,
       };
