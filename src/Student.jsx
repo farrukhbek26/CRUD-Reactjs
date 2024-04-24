@@ -1,5 +1,5 @@
 export const student = [
-    {id: 1, name: 'Fara', status: 'IT'},
+    {id: 1, name: 'Farrux', status: 'IT'},
     {id: 2, name: 'Bobur', status: 'Tadbirkor'},
     {id: 3, name: 'Ziyod', status: 'Dizayner'},
     {id: 4, name: 'Zarif', status: 'Talaba'},
