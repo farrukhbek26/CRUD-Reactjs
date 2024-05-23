@@ -63,8 +63,8 @@ class App extends React.Component {
    
     return (
       <div>
-        <h1>name: {this.state.name}</h1>
-        <h1>status: {this.state.status}</h1>
+        <h1>Name: {this.state.name}</h1>
+        <h1>Status: {this.state.status}</h1>
         <input name="name" onChange={onChange} type="text" placeholder="name" />
         <input name="status" onChange={onChange} type="text" placeholder="status" />
         <button onClick={onAdd}>Add</button>
