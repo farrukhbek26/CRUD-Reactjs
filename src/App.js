@@ -28,17 +28,15 @@ class App extends React.Component {
     this.setState({data: res});
    }
    const onChange = (event) => {
-
-
-    if( event.target.value.length > 0){
-      this.setState({[event.target.name] : event.target.value})
+    this.setState({[event.target.name] : event.target.value})
    }
     const onAdd =() =>{
       let user = {
+        if( onChange().target.value.length > 0){
         id: this.state.data.length+1,
         name: this.state.name,
         status: this.state.status,
-      };
+      }};
       this.setState({
         data: [...this.state.data, user],
         name: '', 
