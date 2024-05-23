@@ -30,7 +30,8 @@ class App extends React.Component {
    const onChange = (event) => {
 
 
-    this.setState({[event.target.name] : event.target.value});
+    if( event.target.value.length > 0){
+      this.setState({[event.target.name] : event.target.value})
    }
     const onAdd =() =>{
       let user = {
