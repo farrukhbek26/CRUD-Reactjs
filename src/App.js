@@ -32,17 +32,16 @@ class App extends React.Component {
    }
     const onAdd =() =>{
       let user = {
-        if( onChange().target.value.length > 0){
         id: this.state.data.length+1,
         name: this.state.name,
         status: this.state.status,
-      }};
+      };
       this.setState({
         data: [...this.state.data, user],
         name: '', 
         status: ''
       })
-      console.log(user);
+      // console.log(user);
 
     }
     const onEdit = ({id, name, status}, isSave)  => {
